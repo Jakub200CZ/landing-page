@@ -8,7 +8,7 @@ Website code with simple code for easy editing and use. The template is written 
 
 ## Color Reference
 
-You can change this colors at style.css `(src/css/style.css)` :root
+You can change these colors in `(src/css/style.css)` at the top in `:root`
 | Color | Hex |
 | ----------------- | ------------------------------------------------------------------ |
 | bg | #0c0f27 |
