@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg: #0c0f27;
+    --bg-dark: #333963;
+    --text-main: #ffffff;
+    --text-link: #007878;
+    --text-link-hover: #00ffff;
+    --title: #3185b3;
+}
+
+::selection {
+    background-color: var(--text-link);
+}
+
+* {
+  scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+
+    background-color: var(--bg);
+    color: var(--text-main);
+
+    font-family: 'Nunito', sans-serif;
+}
+
+.welcome-screen {
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.nav li {
+    margin-top: 1rem;
+    padding-inline: 4rem;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+a {
+    color: var(--text-link);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--text-link-hover);
+    transition: 0.3s;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+  
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text-link-hover);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.title-div {
+    margin-inline: 4rem;
+    margin-top: 7rem;
+
+    display: flex;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin-right: 15rem;
+    font-weight: 100;
+}
+
+.title-img {
+    height: 300px;
+}
+
+.title-btn {
+  margin-top: 1em;
+  padding: 1em 4em;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+  
+.title-btn:hover {
+  background-color: var(--text-link-hover);
+  box-shadow: 0px 15px 20px var(--text-link) ;
+  color: rgb(0, 0, 0);
+  transform: translateY(-7px);
+}
+  
+.title-btn:active {
+  transform: translateY(-1px);
+}
+
+.scroll-fa {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 5rem;
+}
+
+.bounce {
+    font-size: 2rem;
+	position: absolute;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.team {
+    margin-top: 10rem;
+    height: 800px;
+    background-color: var(--bg-dark);
+}
+
+.team-img {
+    height: 125px;
+}
+
+.team-leader {
+    transform: translateY(-25%);
+    text-align: center;
+}
+
+.positionFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.team-members-3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.team-members-3 h2 {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.team h2 {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.member-1, .member-2, .member-3 {
+    margin-inline: 4rem;
+}
+
+.top-padding {
+    padding-top: 3rem;
+}
+
+.skills {
+    height: 500px;
+    background-color: var(--bg);
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.skills h1 {
+    text-decoration: underline;
+
+}
+
+
+.container {
+    text-decoration: none;
+    height: 300px;
+    max-width: 500px;
+    background: var(--bg);
+    margin: 0 auto;
+    padding-top: 4rem;
+  }
+  
+  .progress-bar {
+    margin: 0 0 10px;
+    overflow: hidden;
+  }
+  
+  .progress-title-holder {
+    padding-bottom: 7px;
+    position: relative;
+    margin: 5px 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    color: var(--text-main);  
+  }
+  
+  .progress-title {
+    z-index: 100;
+  }
+  
+  .progress-number-wrapper {
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .progress-number-mark {
+    margin-bottom: 4px;
+    border-radius: 3px;
+    background-color: var(--text-link);
+    padding: 0 8px;
+    position: absolute;
+    bottom: 0;   
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%); 
+  } 
+  
+  .progress-number-wrapper,
+  .progress-number-mark {
+    font-family: Open Sans, sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    height: 24px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: none;
+    color: #ffffff;
+  }
+  
+  .down-arrow {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #16171d;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);  
+  }
+  
+  .progress-content-outter {
+    height: 12px;
+    background-color: #ffffff;
+  }
+  
+  .progress-content {
+    height: 21px;
+    background-color: rgba(67, 243, 183, .92);
+    width: 0%; /* Initial value */
+  }

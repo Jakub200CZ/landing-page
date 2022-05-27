@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="src/img/cloud-computing.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+
+    <!-- then include any tsParticles plugin needed -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+
+    <!-- then include jquery wrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Template - Landing Page</title>
+</head>
+
+<body id="body">
+
+    <div id="tsparticles"></div>
+
+    <div class="welcome-screen">
+        <div class="nav">
+            <div class="main">
+                <ul>
+                    <li><a href="#home" class="hover-underline-animation">Home</a></li>
+                    <li><a href="#aboutus" class="hover-underline-animation">About Us</a></li>
+                    <li><a href="#team" class="hover-underline-animation">Team</a></li>
+                    <li><a href="#skills" class="hover-underline-animation">Skills</a></li>
+                    <li><a href="#contact" class="hover-underline-animation">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="title-div">
+            <div class="text-title">
+                <h1 class="title">Lorem ipsum dolor sit</h1>
+                <p class="subtitle" id="aboutus">Etiam bibendum elit eget erat. Nulla non lectus sed nisl molestie malesuada.
+                    Praesent id
+                    justo in neque elementum ultrices. Quisque porta. Aenean placerat. Vestibulum fermentum tortor id
+                    mi. Ut
+                    enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                    aliquid
+                    ex ea commodi consequatur? Mauris elementum mauris vitae tortor. In laoreet, magna id viverra
+                    tincidunt,
+                    sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Quisque tincidunt scelerisque libero.
+                </p>
+
+                <button class="title-btn"><i class="fa-solid fa-user-group"></i> - Our Team</button>
+            </div>
+            <img src="src/img/cloud-computing.png" alt="Cloud Computer" class="title-img">
+        </div>
+        <span class="scroll-fa">
+            <i class="fa-solid fa-angles-down bounce"></i>
+        </span>
+    </div>
+
+    <div class="team" id="team">
+        <div class="positionFlex">
+            <div class="team-leader">
+                <img src="src/img/pfp-removebg-preview (1).png" alt="Team Leader" class="team-img">
+                <h1>Joshua Natean</h1>
+                <h2>Team Leader / Java Developer</h2>
+            </div>
+        </div>
+
+
+        <!-- Team Flex 3 members -->
+
+        <div class="team-members-3">
+
+            <div class="member-1">
+                <img src="src/img/pfp-removebg-preview (1).png" alt="Team Leader" class="team-img">
+                <h1>Finbar Fellows</h1>
+                <h2>Founder</h2>
+            </div>
+
+            <div class="member-2">
+                <img src="src/img/pfp-removebg-preview (1).png" alt="Team Leader" class="team-img">
+                <h1>Zion Bautista</h1>
+                <h2>Managment Leader</h2>
+            </div>
+
+            <div class="member-3">
+                <img src="src/img/pfp-removebg-preview (1).png" alt="Team Leader" class="team-img">
+                <h1>Elyse Mullins</h1>
+                <h2>Back-End Developer</h2>
+            </div>
+        </div>
+
+        <div class="team-members-3 top-padding">
+
+            <div class="member-1">
+                <img src="src/img/pfp-removebg-preview (1).png" alt="Team Leader" class="team-img">
+                <h1>Conner Faulkner</h1>
+                <h2>Front-End Developer</h2>
+            </div>
+
+            <div class="member-2">
+                <img src="src/img/pfp-removebg-preview (1).png" alt="Team Leader" class="team-img">
+                <h1>Saira Crossley</h1>
+                <h2>Server Engineer</h2>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="skills">
+
+        <h1 id="skills">Skills</h1>
+
+        <div class="container">
+            <!-- First bar -->
+            <div class="progress-bar" data-percentage="96%">
+                <h4 class="progress-title-holder">
+                    <span class="progress-title">Front-End</span>
+                    <span class="progress-number-wrapper">
+                        <span class="progress-number-mark">
+                            <span class="percent"></span>
+                            <span class="down-arrow"></span>
+                        </span>
+                    </span>
+                </h4>
+                <div class="progress-content-outter">
+                    <div class="progress-content"></div>
+                </div>
+            </div>
+            <!-- Second bar -->
+            <div class="progress-bar" data-percentage="78%">
+                <h4 class="progress-title-holder clearfix">
+                    <span class="progress-title">Back-End</span>
+                    <span class="progress-number-wrapper">
+                        <span class="progress-number-mark">
+                            <span class="percent"></span>
+                            <span class="down-arrow"></span>
+                        </span>
+                    </span>
+                </h4>
+                <div class="progress-content-outter">
+                    <div class="progress-content"></div>
+                </div>
+            </div>
+            <!-- Third bar -->
+            <div class="progress-bar" data-percentage="42%">
+                <h4 class="progress-title-holder clearfix">
+                    <span class="progress-title">API</span>
+                    <span class="progress-number-wrapper">
+                        <span class="progress-number-mark">
+                            <span class="percent"></span>
+                            <span class="down-arrow"></span>
+                        </span>
+                    </span>
+                </h4>
+                <div class="progress-content-outter">
+                    <div class="progress-content"></div>
+                </div>
+            </div>
+            <!-- First bar -->
+            <div class="progress-bar" data-percentage="14%">
+                <h4 class="progress-title-holder">
+                    <span class="progress-title">Authentication</span>
+                    <span class="progress-number-wrapper">
+                        <span class="progress-number-mark">
+                            <span class="percent"></span>
+                            <span class="down-arrow"></span>
+                        </span>
+                    </span>
+                </h4>
+                <div class="progress-content-outter">
+                    <div class="progress-content"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="src/js/script.js"></script>
+</html>
