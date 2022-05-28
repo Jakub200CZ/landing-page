@@ -18,6 +18,6 @@ You can change these colors in `(src/css/style.css)` at the top in `:root`
 | text-link-hover | #00ffff |
 | title | #3185b3 |
 
-## Optimizations
+## Optimalization
 
 If you use images, we recommend taking them through a photo compressor such as this [compressjpeg.com](https://compressjpeg.com/)
